@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kamui-library.netlify.app/shared/components.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="stylesheet" href="../auth.css" />
+    <title>Log Out | BookAlley</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../../index.html" class="navbar-brand h2 fw-600"
+            >BookAlley</a
+          >
+          <button class="button navbar-toggler" type="button">
+            <span class="icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="navbar-item search-container">
+            <input type="search" class="input search" placeholder="Search" />
+            <button class="search-icon"><i class="far fa-search"></i></button>
+          </div>
+          <ul class="navbar-menu fs-19">
+            <li class="navbar-item fs-20 fw-600">
+              <a href="#" aria-label="profile link"
+                ><i class="fas fa-user"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" aria-label="wishlist link"
+                ><i class="fas fa-bookmark"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" aria-label="cart link"
+                ><div class="badge-container">
+                  <i class="fas fa-cart-plus fa-lg badge-icon"></i></div
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <div class="auth logout">
+          <div class="card text-only card-logout">
+            <div class="card-header txt-c">
+              <h3 class="h3">
+                Are you sure?
+                <p>You want to log-out</p>
+              </h3>
+            </div>
+            <div class="card-content mgb-16">
+              <button class="button logout-y">Log Out</button>
+              <button class="button logout-n">No</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
