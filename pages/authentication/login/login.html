@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kamui-library.netlify.app/shared/components.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="stylesheet" href="../auth.css" />
+    <title>Log In | BookAlley</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../../index.html" class="navbar-brand h2 fw-600"
+            >BookAlley</a
+          >
+          <button class="button navbar-toggler" type="button">
+            <span class="icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="navbar-item search-container">
+            <input type="search" class="input search" placeholder="Search" />
+            <button class="search-icon"><i class="far fa-search"></i></button>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="../../product/product.html" aria-label="products link"
+                >Library</a
+              >
+            </li>
+            <li class="navbar-item fs-20 fw-600">
+              <a href="#" aria-label="profile link"
+                ><i class="fas fa-user"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="../../wishlist/wishlist.html" aria-label="wishlist link"
+                ><i class="fas fa-bookmark"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="../../cart/cart.html" aria-label="cart link"
+                ><div class="badge-container">
+                  <i class="fas fa-cart-plus fa-lg badge-icon"></i></div
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <div class="auth login">
+          <div class="card text-only card-login">
+            <div class="card-header h3 fw-600 mg-16 txt-c">
+              Log in to BookAlley
+            </div>
+            <div class="card-content txt-l">
+              <form action="">
+                <div class="login-username">
+                  <label for="username" class="control-label gray fs-12"
+                    >Username</label
+                  >
+                  <input
+                    type="text"
+                    class="input form-control"
+                    id="username"
+                    name="username"
+                  />
+                </div>
+                <div class="login-password">
+                  <label for="password" class="control-label gray fs-12"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="input form-control"
+                    id="password"
+                    name="password"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="secondary-action txt-r fs-12">
+                  <span class="save-login">
+                    <input
+                      type="checkbox"
+                      class="input-checkbox checkbox-remember"
+                      id="remember-me"
+                    />
+                    <label for="remember-me" class="gray">Remember me</label>
+                  </span>
+                  <a href="#" class="forgot-pass">Forgot Password</a>
+                </div>
+                <div class="primary-action txt-c">
+                  <button class="button button-full" type="submit">
+                    Log In
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="create-account">
+            <span>New to BookAlley? </span
+            ><a href="../signup/signup.html" class="fw-600">Sign Up</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
