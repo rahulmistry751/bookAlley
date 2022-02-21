@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kamui-library.netlify.app/shared/components.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <title>Cart | BookAlley</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../index.html" class="navbar-brand h2 fw-600"
+            >BookAlley</a
+          >
+          <button class="button navbar-toggler" type="button">
+            <span class="icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="navbar-item search-container">
+            <input type="search" class="input search" placeholder="Search" />
+            <button class="search-icon"><i class="far fa-search"></i></button>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="../product/product.html" aria-label="products link"
+                >Library</a>
+            </li>
+            <li class="navbar-item">
+              <a href="../authentication/login/login.html" aria-label="profile link"
+                ><i class="fas fa-user"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="../authentication/logout/logout.html" aria-label="logout link"
+                ><i class="fas fa-sign-out"></i></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="../wishlist/wishlist.html" aria-label="wishlist link"
+                ><i class="fas fa-bookmark"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" aria-label="cart link"
+                ><div class="badge-container">
+                  <i class="fas fa-cart-plus fa-lg badge-icon"></i></div
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <h3 class="h3 fw-600">Cart</h3>
+        <div class="cart-page">
+          <div class="cart-items">
+            <div class="card card-hori">
+              <div class="card-image">
+                <img
+                  src="../../assets/products-img/atomic habits.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+              <div class="card-content txt-l">
+                <div class="card-header">
+                  <h4 class="book-heading h3 fw-600">Atomic Habits</h4>
+                  <p class="book-subheading gray">By James Clear</p>
+                  <p class="price-rating">
+                    <div class="price">
+                        <span class="dis-price">₹599</span>
+                        <span class="real-price">₹999</span>
+                        <div class="percent gray mgt-16">40% off</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star star-rating mgt-16"></i>4.5
+                    </div>
+                    <div class="qty">
+                      <button class="button button-sm"><i class="fas fa-minus"></i></button>
+                      <input type="text" value="1" class="input-qty txt-c" min="1" max="50" >
+                      <button class="button button-sm"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <button class="button button-full mgb-16">Remove from cart</button>
+                    <button class="button button-outlined button-full">Add to wishlist</button>
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class="cart-bill">
+            <div class="card text-only bill-section">
+                <div class="card-content">
+                    <div class="bill">
+                        <h3 class="h3 bill-heading">Price details</h3>
+                        <div class="catalogue">
+                            <p class="qty">Quantity</p>
+                            <span class="amt">₹599</span>
+                        </div>
+                        <div class="catalogue">
+                            <p class="discount">Discount</p>
+                            <span class="amt">-₹49</span>
+                        </div>
+                        <div class="catalogue">
+                            <p class="delivery-chg">Delivery charges</p>
+                            <span class="amt">₹50</span>
+                        </div>
+                        <div class="catalogue total-amt-container">
+                            <p class="total-amt">Total amount</p>
+                            <span class="amt">₹600</span>
+                        </div>
+                        <button class="button ">Place the order</button>
+                    </div>
+                    
+                </div>
+            </div>
+          </div> <!--Here cart bill ends-->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
