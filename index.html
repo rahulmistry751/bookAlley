@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kamui-library.netlify.app/shared/components.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>BookAlley</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <a href="#" class="navbar-brand h2 fw-600">BookAlley</a>
+          <button class="button navbar-toggler" type="button">
+            <span class="icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="navbar-item search-container">
+            <input
+              type="search"
+              class="input search"
+              placeholder="Search by name, title, author"
+            />
+            <button class="search-icon"><i class="far fa-search"></i></button>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="./pages/product/product.html" aria-label="products link"
+                >Library</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./pages/authentication/login/login.html" aria-label="profile link"
+                ><i class="fas fa-user"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="./pages/authentication/logout/logout.html" aria-label="logout link"
+                ><i class="fas fa-sign-out"></i></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="./pages/wishlist/wishlist.html" aria-label="wishlist link"
+                ><i class="fas fa-bookmark"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a href="./pages/cart/cart.html" aria-label="cart link"
+                ><div class="badge-container">
+                  <i class="fas fa-cart-plus fa-lg badge-icon"></i></div
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <section class="hero-section">
+          <div class="hero-section-content">
+            <h2 class="hero-heading h1 fw-600">Build your library</h2>
+            <h4 class="hero-subheading h3 fw-600 gray">
+              Wide selection | 25M+ Books in 8 languages
+            </h4>
+            <a class="button button-md fs-16" href="./pages/product/product.html">View all</a>
+          </div>
+          <div class="image-container hero-section-img">
+            <img src="./assets/hero.svg" alt="" class="image hero-img" />
+          </div>
+        </section>
+        <section class="popular-section">
+            <div class="popular-heading">
+                <h4 class="h3 fw-600">Popular now</h4>
+                <a href="./pages/product/product.html" class="view-all">View all</a>
+            </div>
+          
+          <div class="popular-list">
+            <ul class="list">
+              <li class="list-item">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img
+                      src="./assets/products-img/atomic habits.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <i class="fas fa-bookmark card-like"></i>
+                  </div>
+
+                    <div class="card-content txt-l">
+                        <div class="card-header book-header">
+                        <h4 class="book-heading h3 fw-600">Atomic Habits</h4>
+                        <p class="book-subheading gray">By James Clear</p>
+                        <p class="price-rating">
+                            <div class="price">
+                                <span class="dis-price">₹599</span>
+                                <span class="real-price">₹999</span>
+                                <div class="percent gray mgt-16">40% off</div>
+                            </div>
+                            <div class="rating">
+                            <i class="fas fa-star star-rating mgt-16"></i>4.5
+                            </div>
+                        </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="button button-full">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-item">
+                  <div class="card">
+                  <div class="card-img-container">
+                    <img
+                      src="./assets/products-img/robinsharma.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <i class="fas fa-bookmark card-like"></i>
+                  </div>
+
+                    <div class="card-content txt-l">
+                        <div class="card-header book-header">
+                        <h4 class="book-heading h3 fw-600">The 5AM club</h4>
+                        <p class="book-subheading gray">By Robin sharma</p>
+                        <p class="price-rating">
+                            <div class="price">
+                                <span class="dis-price">₹599</span>
+                                <span class="real-price">₹999</span>
+                                <div class="percent gray mgt-16">40% off</div>
+                            </div>
+                            <div class="rating">
+                            <i class="fas fa-star star-rating mgt-16"></i>4.5
+                            </div>
+                        </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="button button-full">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-item">
+                  <div class="card">
+                  <div class="card-img-container">
+                    <img
+                      src="./assets/products-img/keigo.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <i class="fas fa-bookmark card-like"></i>
+                  </div>
+
+                    <div class="card-content txt-l">
+                        <div class="card-header book-header">
+                        <h4 class="book-heading h3 fw-600">The Devotion Of Suspect X</h4>
+                        <p class="book-subheading gray">By Keigo Higashino</p>
+                        <p class="price-rating">
+                            <div class="price">
+                                <span class="dis-price">₹343</span>
+                                <span class="real-price">₹499</span>
+                                <div class="percent gray mgt-16">31% off</div>
+                            </div>
+                            <div class="rating">
+                            <i class="fas fa-star star-rating mgt-16"></i>4.5
+                            </div>
+                        </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="button button-full">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              
+              <li class="list-item">
+                  <div class="card">
+                  <div class="card-img-container">
+                    <img
+                      src="./assets/products-img/Gillian.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <i class="fas fa-bookmark card-like"></i>
+                  </div>
+                    <div class="card-content txt-l">
+                        <div class="card-header book-header">
+                        <h4 class="book-heading h3 fw-600">Gone Girl</h4>
+                        <p class="book-subheading gray">By Gillian Flynn</p>
+                        <p class="price-rating">
+                            <div class="price">
+                                <span class="dis-price">₹237</span>
+                                <span class="real-price">₹350</span>
+                                <div class="percent gray mgt-16">32% off</div>
+                            </div>
+                            <div class="rating">
+                            <i class="fas fa-star star-rating mgt-16"></i>4.4
+                            </div>
+                        </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="button button-full">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
